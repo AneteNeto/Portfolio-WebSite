@@ -1,0 +1,86 @@
+<!-- logo-anete.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+     fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Logo Anete Neto</title>
+
+  <!-- Tema: por padrão herda currentColor; se não houver, cai nos tons abaixo -->
+  <style>
+    :root {
+      --logo-accent-light: #8f6cff;  /* tema claro */
+      --logo-accent-dark:  #c7a3ff;  /* tema escuro */
+    }
+    /* cor por defeito (quando NÃO usas currentColor) */
+    .accent { stroke: var(--logo-accent-light); }
+    .fillAccent { fill: var(--logo-accent-light); }
+
+    @media (prefers-color-scheme: dark) {
+      .accent { stroke: var(--logo-accent-dark); }
+      .fillAccent { fill: var(--logo-accent-dark); }
+    }
+
+    /* se quiseres herdar a cor do texto de fora, basta pôr .use-current em <g> principal */
+    .use-current .accent { stroke: currentColor; }
+    .use-current .fillAccent { fill: currentColor; }
+  </style>
+
+  <!-- grupo principal; troca para class="use-current" se quiser herdar currentColor -->
+  <g>
+
+    <!-- asas externas (contorno) -->
+    <path class="accent" stroke-width="6"
+      d="M100 100
+         C 76 74, 56 60, 44 60
+         C 28 60, 24 79, 38 93
+         C 48 104, 65 110, 84 114
+         C 77 124, 66 135, 58 145
+         C 49 156, 46 164, 52 169
+         C 58 174, 69 169, 78 160
+         C 86 152, 94 139, 100 126" />
+
+    <path class="accent" stroke-width="6"
+      d="M100 100
+         C 124 74, 144 60, 156 60
+         C 172 60, 176 79, 162 93
+         C 152 104, 135 110, 116 114
+         C 123 124, 134 135, 142 145
+         C 151 156, 154 164, 148 169
+         C 142 174, 131 169, 122 160
+         C 114 152, 106 139, 100 126" />
+
+    <!-- detalhes internos das asas (veios/folha) -->
+    <path class="accent" stroke-width="4"
+      d="M82 86
+         C 72 89, 66 97, 66 108
+         C 66 118, 73 126, 84 131" />
+    <path class="accent" stroke-width="4"
+      d="M118 86
+         C 128 89, 134 97, 134 108
+         C 134 118, 127 126, 116 131" />
+
+    <!-- pontas circulares das asas -->
+    <circle class="accent" stroke-width="6" cx="44" cy="60" r="2.5" />
+    <circle class="accent" stroke-width="6" cx="156" cy="60" r="2.5" />
+    <circle class="accent" stroke-width="6" cx="52" cy="169" r="2.5" />
+    <circle class="accent" stroke-width="6" cx="148" cy="169" r="2.5" />
+
+    <!-- letras estilizadas (traço, não fonte) para manter igual em qualquer sistema) -->
+    <!-- A (asa esquerda) -->
+    <path class="accent" stroke-width="6"
+      d="M86 74 L74 116" />
+    <path class="accent" stroke-width="6"
+      d="M86 74 L92 92" />
+    <path class="accent" stroke-width="6"
+      d="M72 102 L90 102" />
+
+    <!-- N (asa direita) -->
+    <path class="accent" stroke-width="6"
+      d="M114 74 L114 116" />
+    <path class="accent" stroke-width="6"
+      d="M114 74 L132 116" />
+    <path class="accent" stroke-width="6"
+      d="M132 116 L132 90" />
+
+    <!-- ponto/ligação de “circuito” no interior direito -->
+    <circle class="fillAccent" cx="120" cy="118" r="4.2"/>
+  </g>
+</svg>
