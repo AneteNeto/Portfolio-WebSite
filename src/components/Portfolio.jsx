@@ -42,7 +42,7 @@ const baseProjects = [
     id: 1,
     key: 'campus',
     tech: ['Cisco IOS', 'VLAN', 'OSPF', 'Packet Tracer'],
-    screenshot: '/images/teste.jpeg',
+    screenshot: '/public/images/teste.jpeg',
     links: {
       github: 'https://github.com/aneteneto/campus-lan',
       youtube: 'https://youtu.be/XXXXXXXXXXX',
@@ -68,7 +68,7 @@ const baseProjects = [
     id: 3,
     key: 'pfsense',
     tech: ['pfSense', 'Suricata', 'Scapy'],
-    screenshot: '/images/teste.jpeg',
+    screenshot: '/public/images/teste.jpeg',
     links: {
       github: 'https://github.com/aneteneto/pfsense-ids-lab',
       youtube: 'https://youtu.be/XXXXXXXXXXX',
@@ -81,7 +81,7 @@ const baseProjects = [
     id: 4,
     key: 'pfsense',
     tech: ['pfSense', 'Suricata', 'Scapy'],
-    screenshot: '/images/teste.jpeg',
+    screenshot: '/public/images/teste.jpeg',
     links: {
       github: 'https://github.com/aneteneto/pfsense-ids-lab',
       youtube: 'https://youtu.be/XXXXXXXXXXX',
@@ -94,7 +94,7 @@ const baseProjects = [
     id: 5,
     key: 'pfsense',
     tech: ['pfSense', 'Suricata', 'Scapy'],
-    screenshot: '/images/teste.jpeg',
+    screenshot: '/public/images/teste.jpeg',
     links: {
       github: 'https://github.com/aneteneto/pfsense-ids-lab',
       youtube: 'https://youtu.be/XXXXXXXXXXX',
@@ -383,7 +383,7 @@ export default function PortfolioAneteI18n({ social = defaultSocial, defaultLang
                   className="relative"
                 >
                   <img
-                    src="/images/ANETE.jpg"
+                    src="/public/images/ANETE.jpg"
                     alt="Anete Neto"
                     className="w-[110px] h-[110px] md:w-[130px] md:h-[130px] rounded-full object-cover ring-2 ring-[#a277ff]/60 shadow-[0_0_20px_rgba(162,119,255,0.25)] hover:ring-[#caa3ff] hover:shadow-[0_0_25px_rgba(202,163,255,0.35)] transition-all duration-500"
                   />
@@ -578,37 +578,37 @@ export default function PortfolioAneteI18n({ social = defaultSocial, defaultLang
             {
                 id: 1,
                 title: 'Introduction to Networks — Cisco NetAcad',
-                image: '/certificats/teste.jpeg',
+                image: '/public/certificats/teste.jpeg',
                 link: 'https://www.netacad.com/',
             },
             {
                 id: 2,
                 title: 'Python for Everybody — Coursera',
-                image: '/certificats/teste.jpeg',
+                image: '/public/certificats/teste.jpeg',
                 link: 'https://coursera.org/',
             },
             {
                 id: 3,
                 title: 'AWS Cloud Practitioner — AWS Academy',
-                image: '/certificats/teste.jpeg',
+                image: '/public/certificats/teste.jpeg',
                 link: 'https://aws.amazon.com/training/',
             },
             {
                 id: 4,
                 title: 'Introduction to Networks — Cisco NetAcad',
-                image: '/certificats/teste.jpeg',
+                image: '/public/certificats/teste.jpeg',
                 link: 'https://www.netacad.com/',
             },
             {
                 id: 5,
                 title: 'Python for Everybody — Coursera',
-                image: '/certificats/teste.jpeg',
+                image: '/public/certificats/teste.jpeg',
                 link: 'https://coursera.org/',
             },
             {
                 id: 6,
                 title: 'AWS Cloud Practitioner — AWS Academy',
-                image: '/certificats/teste.jpeg',
+                image: '/public/certificats/teste.jpeg',
                 link: 'https://aws.amazon.com/training/',
             },
             ].map((c) => (
